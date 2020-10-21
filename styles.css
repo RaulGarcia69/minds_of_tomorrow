@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Style the header */
+
+.header {
+    background-image: url("./img/banner-2.jpg");
+    background-size: cover;
+    background-attachment: local;
+    padding: 12% 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 80px;
+}
+
+.header p {
+    font-size: 35px;
+}
+
+
+/* Create three equal columns that floats next to each other */
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 20px 20%;
+}
+
+.one-column h1,
+.one-column h2 {
+    text-align: center;
+}
+
+#cadetblue {
+    background-color: cadetblue;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.two-column {
+    padding: 20px;
+    width: 50%;
+    float: left;
+}
+
+.two-column h1 {
+    font-size: 75px;
+}
+
+.two-column img {
+    width: 100%;
+}
+
+.three-column {
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+}
+
+.three-column img {
+    width: 100%;
+}
+
+.three-column .desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/*footer*/
+
+#footer-a {
+    background-color: #21252995;
+}
+
+#footer-a p {
+    color: white;
+}
+
+#footer-a h2 {
+    font-size: 25px;
+}
+
+.four-column {
+    padding: 20px;
+    float: left;
+    width: 25%;
+}
+
+#footer-b {
+    color: grey;
+    background-color: #212529;
+    text-align: center;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:600px) {
+    .two-column,
+    .three-column,
+    .four-column {
+        width: 100%;
+    }
+    .header {
+        background-image: url('../img/26d5d60f2336333eeeaac8897c3ff61b.jpg');
+    }
+}
