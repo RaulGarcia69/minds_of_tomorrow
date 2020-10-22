@@ -19,11 +19,7 @@ body {
 }
 
 .header h1 {
-    font-size: 80px;
-}
-
-.header p {
-    font-size: 35px;
+    font-size: 12vh;
 }
 
 
@@ -38,7 +34,7 @@ body {
 .one-column h1,
 .one-column h2 {
     text-align: center;
-    font-size: 75px;
+    font-size: 6vw;
 }
 
 #one-column-1 {
@@ -70,11 +66,11 @@ body {
 }
 
 .two-column h1 {
-    font-size: 80px;
+    font-size: 6vw;
 }
 
 .two-column h2 {
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 500;
 }
 
@@ -91,7 +87,7 @@ body {
 .four-column p {
     text-align: center;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 .four-column img {
@@ -120,4 +116,33 @@ body {
     float: left;
     color: blanchedalmond;
     font-size: 18px;
+}
+
+@media screen and (max-width:600px) {
+    .four-column,
+    .two-column,
+    {
+        width: 50%;
+    }
+    .four-column img {
+        width: 100%;
+    }
+    .two-column img {
+        width: 120%;
+    }
+    .header h1 {
+        font-size: 10vw;
+    }
+    .two-column h1 {
+        font-size: 5vw;
+    }
+    .two-column {
+        padding: 1% 10%;
+    }
+    .two-column-footer p {
+        font-size: 3vw;
+    }
+    #footer {
+        padding: 0% 8%;
+    }
 }
