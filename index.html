@@ -12,13 +12,19 @@
 </head>
 
 <body>
+    <ul id="nav">
+        <li><a href="#header">Welcome</a></li>
+        <li><a href="#section-1">Programs</a></li>
+        <li><a href="#section-2">Innovative</a></li>
+        <li><a href="#section-3">Studio</a></li>
+    </ul>
 
-    <div class="header">
+    <div class="header" id="header">
         <h1>Welcome to</h1>
         <h1> the creative after-school</h1>
     </div>
 
-    <div class="row">
+    <div class="row" id="section-1">
         <div class="two-column">
             <h1>Our enrichment programs boost your kid to a brighter future</h1>
             <h2>Embark your kid into a inspirational journey of fun and discovery through a hands-on approach.</h2>
@@ -50,7 +56,7 @@
             <div class="four-column"></div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="section-3">
         <div class="two-column">
             <img src="./img/section-3.png" alt="no funciona">
         </div>
@@ -78,6 +84,20 @@
             <h1>Come meet us. We would love to get to know you!</h1>
         </div>
     </div>
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("nav").style.backgroundColor = "white";
+            } else {
+                document.getElementById("nav").style.backgroundColor = "rgba(0,0,0,0.0)";
+            }
+        }
+    </script>
 </body>
 
 <footer>
