@@ -156,6 +156,10 @@ li a:hover {
     font-size: 18px;
 }
 
+.padding-30 {
+    padding-top: 30px;
+}
+
 @media screen and (max-width:600px) {
     .four-column,
     .two-column,
